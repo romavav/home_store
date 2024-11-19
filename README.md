@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Описание проекта
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Это интернет-магазин, разработанный с использованием **React**. Он позволяет пользователям просматривать товары, добавлять их в корзину и оформлять заказы. Проект включает в себя компоненты для отображения категорий товаров, товаров, корзины и заказов.
 
-## Available Scripts
+## Функциональные возможности
 
-In the project directory, you can run:
+- Просмотр и фильтрация товаров по категориям
+- Добавление товаров в корзину
+- Просмотр содержимого корзины
+- Удаление товаров из корзины
+- Отображение общей суммы покупок
 
-### `npm start`
+## Установка и настройка
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Требования
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (версия 12 или выше)
+- **npm** (версия 5.6 или выше)
 
-### `npm test`
+### Установка проекта
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Клонируйте репозиторий:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/ваше_имя/имя_проекта.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Перейдите в директорию проекта:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd имя_проекта
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Установите зависимости:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Запуск проекта
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Для запуска проекта в режиме разработки выполните:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Проект будет доступен по адресу [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Используемые технологии
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React** (библиотека для построения пользовательских интерфейсов)
+- **React Icons** (для иконок)
+- **CSS** для стилизации компонентов
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Компоненты
 
-### Code Splitting
+- **Categories**  
+  Компонент для отображения категорий товаров. При клике на категорию вызывается функция `chooseCategory`, передавая ключ категории.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Header**  
+  Компонент заголовка, который включает в себя логотип, навигацию и корзину. Корзина открывается по клику на иконку и отображает заказы или сообщение о том, что корзина пуста.
 
-### Analyzing the Bundle Size
+- **Item**  
+  Компонент для отображения одиночного товара, который включает изображение, название, описание и цену. При нажатии на "+" товар добавляется в корзину.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Items**  
+  Компонент, отображающий список товаров. Для каждого товара используется компонент `Item`.
 
-### Making a Progressive Web App
+- **Order**  
+  Компонент для отображения заказа в корзине. Позволяет удалить товар из корзины по клику на значок корзины.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Заключение
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Этот интернет-магазин на **React** демонстрирует основные принципы разработки современных приложений с использованием компонентного подхода и управления состоянием. Вы можете расширить его функциональность, добавляя новые возможности, такие как авторизация пользователей, интеграция с платёжными системами и другие функции. 
